@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "armorpluss",
+  "version": "${version}",
+
+  "name": "Armor pluss",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Adam McCombe"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.adam.armor.armor"
+    ],
+    "client": [
+      "net.adam.armor.armorclient"
+    ]
+  },
+  "mixins": [
+    "armor.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
